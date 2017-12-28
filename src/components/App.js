@@ -47,7 +47,7 @@ class App extends Component {
       .then((food) => {this.setState(() => ({
         food,
         loadingFood: false,
-      })); console.log(food)})
+      }));})
   }
   openIngredientsModal = () => this.setState(() => ({ ingredientsModalOpen: true }))
   closeIngredientsModal = () => this.setState(() => ({ ingredientsModalOpen: false }))
@@ -67,7 +67,7 @@ class App extends Component {
     const { foodModalOpen, loadingFood, food, ingredientsModalOpen } = this.state
     const { calendar, selectRecipe, remove } = this.props
     const mealOrder = ['breakfast', 'lunch', 'dinner']
-    console.log('Props', this.props.calendar)
+    //console.log('Props', this.props.calendar)
 
     return (
       <div className='container'>
