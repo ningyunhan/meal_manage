@@ -64,9 +64,9 @@ class App extends Component {
     .reduce((ings, { ingredientLines }) => ings.concat(ingredientLines), [])
   }
   render() {
-    const { foodModalOpen, loadingFood, food, ingredientsModalOpen } = this.state
-    const { calendar, selectRecipe, remove } = this.props
-    const mealOrder = ['breakfast', 'lunch', 'dinner']
+    const { foodModalOpen, loadingFood, food, ingredientsModalOpen } = this.state;
+    const { calendar, selectRecipe, remove } = this.props;
+    const mealOrder = ['breakfast', 'lunch', 'dinner'];
     //console.log('Props', this.props.calendar)
 
     return (
@@ -178,7 +178,7 @@ function mapStateToProps ({ food, calendar }) {
           ? food[calendar[day][meal]]
           : null
 
-        return meals
+        return meals;
       }, {})
     })),
   }
